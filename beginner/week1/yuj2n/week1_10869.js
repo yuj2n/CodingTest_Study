@@ -4,6 +4,7 @@ const input = fs.readFileSync("/dev/stdin").toString().trim().split(" ").map(Num
 var a = input[0] + input[1];
 var b = input[0] - input[1];
 var c = input[0] * input[1];
+// javascript에는 몫을 구하는 연산자 X -> 소수점 처리 위해 parseInt() 사용
 var d = parseInt(input[0] / input[1]);
 var e = input[0] % input[1];
 console.log(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e);
